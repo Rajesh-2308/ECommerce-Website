@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <parameter name="Product1" value="Sauce Labs Bolt T-Shirt"/>
+    <parameter name="Username" value="standard_user"/>
+    <parameter name="Product2" value="Sauce Labs Fleece Jacket"/>
+    <parameter name="invalidPassword" value="secret"/>
+    <parameter name="Sort" value="Price (low to high)"/>
+    <parameter name="loggedoutusername" value="locked_out_user"/>
+    <parameter name="Password" value="secret_sauce"/>
+    <classes>
+      <class name="com.Sauce.Test.ProductListingPageTest">
+        <methods>
+          <include name="Sortproductsandvalidateorder"/>
+          <include name="stopDriver"/>
+          <include name="startDriver"/>
+        </methods>
+      </class> <!-- com.Sauce.Test.ProductListingPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
